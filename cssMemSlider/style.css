@@ -1,99 +1,78 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-:focus,
-:active {
-    outline: none;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-a:focus,
-a:active {
-    outline: none;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-
-nav,
-footer,
-header,
-aside {
-    display: block;
-}
-
-html,
 body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 47, 85);
 }
-
-input,
-button,
-textarea {
-    font-family: inherit;
+.slider {
+    width: 85vh;
+    height: 60vh;
+    border-radius: 20px;
+    overflow: hidden;
 }
-
-input::-ms-clear {
+.sliders {
+    width: 500%;
+    height: 80vh;
+    display: flex;
+}
+.sliders input {
     display: none;
 }
-
-button {
+.slide {
+    width: 20%;
+    transition: 1s;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+.navigation-manual {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.manual_btn {
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
+    transition: 0.5s;
+    margin-left: 10px;
+    background-color: rgb(55, 80, 121);
+}
+.manual_btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+.manual_btn:active {
+    background-color: rgb(155, 30, 30);
 }
 
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
+#radio1:checked ~ .first {
+    margin-left: 0;
 }
-
-a,
-a:visited {
-    text-decoration: none;
-    color: #ffffff;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
+#radio2:checked ~ .first {
+    margin-left: -20%;
 }
-
-a:hover {
-    text-decoration: none;
-    color: #f8dbb1;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+#radio3:checked ~ .first {
+    margin-left: -40%;
 }
-
-ul li {
-    list-style: none;
+#radio4:checked ~ .first {
+    margin-left: -60%;
 }
-
-img {
-    vertical-align: top;
+.text {
+    display: flex;
+    width: 200px;
+    height: 30px;
+    overflow: hidden;
+    color: cornsilk;
+    font-size: 20px;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-weight: inherit;
+.text_ran {
+    width: 200px;
+    height: 100%;
 }
-
-/*--------------------*/

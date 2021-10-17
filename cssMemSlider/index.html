@@ -5,38 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>cssMemSlider</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header></header>
     <main>
-        <div class="container">
-            <div class="slider">
-                <div class="imges">
+
+        <div class="slider">
+
+
+            <div class="sliders">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+
+                <div class="slide first">
                     <img src=".//img/1.jpg" alt="1">
+                </div>
+
+                <div class="slide">
                     <img src=".//img/2.jpg" alt="2">
+                </div>
+
+                <div class="slide">
                     <img src=".//img/3.jpg" alt="3">
+                </div>
+
+                <div class="slide">
                     <img src=".//img/4.jpg" alt="4">
                 </div>
-                <div>
-
-                    <div class="console">
-
-                    </div>
-
-                    <div class="text">
-
-                        <p></p>
-                    </div>
-
-                </div>
-
             </div>
+
         </div>
+
+        <div class="navigation-manual">
+            <div class="text">
+                <div class="text_ran first">Длинный текст Длинный текст</div>
+                <div class="text_ran">Длинный текст Длинный текст</div>
+                <div class="text_ran">Длинный текст Длинный текст</div>
+                <div class="text_ran">Длинный текст Длинный текст</div>
+            </div>
+
+            <div>
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+                <label for="radio4" class="manual_btn"></label>
+            </div>
+
+        </div>
+
+        </div>
+
     </main>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
